@@ -48,7 +48,7 @@ class ControllerExercicio {
         const num2 = req.body.num2
 
         const result = servico.Multiplicar(num1, num2)
-        
+
         res.status(200).json({ result });
       } catch (error) {
         res.status(500).json({ message: "Erro ao Multiplicar"});
